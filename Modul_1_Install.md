@@ -51,11 +51,11 @@
 >  >`Developer Options -> USB Debuggin : Enable, Install via USB : Enable`
 >  buat lokasi/enable developer option bisa cek di google sesuai merek HP kalian masing masing 
 >  *(**Install via USB** , tidak semua HP ada option tersebut, kalo gak ada berarti gapapa gaosah di enable)*
->  colokin deh ke laptop pake kabel (hp nya nyala ya)
+>  colokin deh ke laptop pake kabel usb (hp nya nyala ya)
 
 **Step 6**
 
->  - Kalo emulator/Hp nya dah ke deteksi, bakal muncul begituan*(di pojok kanan atas, gak pojok banget si)*
+>  - kalo emulator/hp nya sudah ter-deteksi, bakal muncul nama hp/emulator kalian *(di pojok kanan atas, gak pojok banget si)*
 >  ![enter image description here](https://i.imgur.com/de2mJ4w.png)
 >  - Pilih device nya, kalo udah silahkan pencet segitiga Ijo
 
