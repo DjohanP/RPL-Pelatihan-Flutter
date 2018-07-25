@@ -8,16 +8,16 @@
 **Step 1**
 
 >  - Ekstrak "flutter_windows_vx.x.x-beta.zip" ke direktori kesayangan mu
-	>  Contoh : `C:\flutter`
+>  Contoh : `C:\flutter`
 >  - Install Android Studio *(next next aja)*
  
 **Step 2**
 
->  - Buka folder flutter yang tadi kamu extract tadi, terus cari buka ***flutter_console.bat*** *(double click aja)*
+>  - Buka folder flutter yang kamu extract tadi, terus cari dan buka ***flutter_console.bat*** *(double click aja)*
 >  kalo udah kebuka bakal muncul beginian :![Tampilan cmd kalo abis buka flutter_console.bat](https://i.imgur.com/ThElAWE.png)
->  - Kalo udah coba jalanin `flutter doctor` terus enter dah
->  nanti muncul beginian ![setelah jalanin flutter doctor](https://i.imgur.com/LD4LeZw.png)
- flutter doctor bakal meriksa komputer kita, apakah udah tersedia tools untuk mendukung berjalannya flutter. *(seharusnya kalo udah install android studio dan udah melakukan update SDK nya, tampilan punya kalian bakal sama kayak diatas)*
+>  - sekarang coba jalanin `flutter doctor` dan enter
+>  akan muncul kayak gini ![setelah jalanin flutter doctor](https://i.imgur.com/LD4LeZw.png)
+ flutter doctor akan meriksa komputer kita, apakah sudah tersedia tools untuk mendukung berjalannya flutter. *(seharusnya kalo udah install android studio dan udah melakukan update SDK nya, tampilan punya kalian bakal sama kayak diatas)*
 
 **Step 3**
 
@@ -60,7 +60,8 @@
 >  - Pilih device nya, kalo udah silahkan pencet segitiga Ijo
 
 **Modul untuk instalasie sudah selesai :-)**
+
 >  sebetulnya ada cara untuk menggunakan IDE lain selain Android Studio
-> (Visual Studio Code, IntelliJ),   hanya saja ini cara paling mudah
+> (Visual Studio Code, IntelliJ), hanya saja ini cara paling mudah
 > untuk awam karena Android Studio sudah sepaket dari SDK sampai
 > emulatornya *(tinggal next next)*.
