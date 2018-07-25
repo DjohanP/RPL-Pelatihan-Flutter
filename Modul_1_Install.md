@@ -60,6 +60,7 @@
 >  - Pilih device nya, kalo udah silahkan pencet segitiga Ijo
 
 **Modul untuk instalasie sudah selesai :-)**
-     sebetulnya ada cara untuk menggunakan IDE lain selain Android Studio (Visual Studio Code, IntelliJ), 
-     hanya saja ini cara paling mudah untuk awam karena Android Studio sudah sepaket dari SDK sampai emulatornya *(tinggal next next)*.
- 
+>  sebetulnya ada cara untuk menggunakan IDE lain selain Android Studio
+> (Visual Studio Code, IntelliJ),   hanya saja ini cara paling mudah
+> untuk awam karena Android Studio sudah sepaket dari SDK sampai
+> emulatornya *(tinggal next next)*.
