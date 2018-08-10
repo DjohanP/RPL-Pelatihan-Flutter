@@ -38,7 +38,6 @@ class DatabaseNote{
   Future<List<Note>> getNotes() async {
     await opendb();
     List<Map> entities = await _database.rawQuery("select * from $TABLE_NAME");
-    //print(entities);
     return entities.map((map) => new Note.fromMap(map)).toList();
   }
 
