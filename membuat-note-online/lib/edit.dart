@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-
-
-class EditData extends StatefulWidget{
-
+class EditData extends StatefulWidget {
   final List lists;
   final int index;
-  EditData({this.index,this.lists});
+
+  EditData({this.index, this.lists});
 
   @override
   State<StatefulWidget> createState() {
@@ -15,13 +13,13 @@ class EditData extends StatefulWidget{
   }
 }
 
-class EditDataState extends State<EditData>{
-
+class EditDataState extends State<EditData> {
   TextEditingController controllerId;
   TextEditingController controllerTitle;
   TextEditingController controllerNotes;
 
-  void editData(){
+
+  void editData() {
     var url = "http://10.0.2.2/simple_crud_flutter_api/editData.php";
 
     http.post(url, body: {
@@ -33,21 +31,25 @@ class EditDataState extends State<EditData>{
 
   @override
   void initState() {
-    controllerTitle = new TextEditingController(text: widget.lists[widget.index]['notepad_title']);
-    controllerNotes = new TextEditingController(text: widget.lists[widget.index]['notepad_body']);
+    controllerTitle = new TextEditingController(
+        text: widget.lists[widget.index]['notepad_title']);
+    controllerNotes = new TextEditingController(
+        text: widget.lists[widget.index]['notepad_body']);
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: AppBar(title: Text('Edit Notepad'),),
+      appBar: AppBar(
+        title: Text("Notepad Online"),
+      ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
+        onPressed: () {
           editData();
+//          Navigator.pushNamed(context, '/');
           Navigator.pop(context);
-          Navigator.pop(context);
+//          Navigator.pop(context);
         },
         child: new Icon(Icons.check),
       ),
@@ -59,7 +61,8 @@ class EditDataState extends State<EditData>{
               child: new TextFormField(
                 controller: controllerTitle,
                 decoration: InputDecoration(
-                    labelText: 'Title'
+                  labelText: 'Title',
+                  border: OutlineInputBorder(),
                 ),
               ),
             ),
@@ -67,11 +70,10 @@ class EditDataState extends State<EditData>{
               margin: EdgeInsets.all(20.0),
               child: new TextFormField(
                 keyboardType: TextInputType.multiline,
-                maxLines: 10,
+                maxLines: null,
                 controller: controllerNotes,
                 decoration: InputDecoration(
-                    hintText: 'Notes'
-                ),
+                    border: OutlineInputBorder(), labelText: 'Notes'),
               ),
             ),
           ],
